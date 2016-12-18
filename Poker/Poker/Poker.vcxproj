@@ -111,11 +111,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Card.h" />
+    <ClInclude Include="BaseDeck.h" />
+    <ClInclude Include="IDeckgenerator.h" />
+    <ClInclude Include="SimpleDeck.h" />
     <ClInclude Include="Utils.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Card.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="SimpleDeck.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
