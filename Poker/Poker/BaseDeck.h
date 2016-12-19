@@ -10,7 +10,7 @@ namespace Models
 	class BaseDeck
 	{
 	public:
-		BaseDeck() {};
+		BaseDeck(IDeckGenerator a_generator,int a_size):m_generator(a_generator),m_size(a_size){};
 		virtual Card DrawCard() = 0;
 		virtual int GetSize() { return m_size; }
 		virtual void SetSize(int a_size) { m_size= a_size ; }

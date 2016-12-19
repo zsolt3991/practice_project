@@ -2,11 +2,6 @@
 
 namespace Models {
 
-	SimpleDeck::SimpleDeck()
-	{
-	}
-
-
 	SimpleDeck::~SimpleDeck()
 	{
 	}
