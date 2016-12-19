@@ -15,6 +15,12 @@
     <Filter Include="Header Files\Models">
       <UniqueIdentifier>{42f441d6-8fc0-4aea-9cda-70e150fcfb28}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Logic">
+      <UniqueIdentifier>{3696a4d7-b546-4a08-a9fd-1f4f2f74fef7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Logic">
+      <UniqueIdentifier>{902b8585-5cc3-4802-a885-ed8be20808f0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Utils.h">
@@ -23,14 +29,17 @@
     <ClInclude Include="SimpleDeck.h">
       <Filter>Header Files\Models</Filter>
     </ClInclude>
-    <ClInclude Include="IDeckgenerator.h">
-      <Filter>Header Files\Models</Filter>
-    </ClInclude>
     <ClInclude Include="Card.h">
       <Filter>Header Files\Models</Filter>
     </ClInclude>
     <ClInclude Include="BaseDeck.h">
       <Filter>Header Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="StraightDeckGenerator.h">
+      <Filter>Header Files\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="IDeckgenerator.h">
+      <Filter>Header Files\Logic</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +51,9 @@
     </ClCompile>
     <ClCompile Include="Card.cpp">
       <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="StraightDeckGenerator.cpp">
+      <Filter>Source Files\Logic</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -5,9 +5,10 @@ namespace Models
 	class SimpleDeck : public BaseDeck
 	{
 	public:
-		SimpleDeck(IDeckGenerator a_generator, int a_size) :BaseDeck(a_generator, a_size) {};
+		SimpleDeck(IDeckGenerator* a_generator, int a_size) :BaseDeck(a_generator, a_size) {};
 		~SimpleDeck();
-		void Generate()override;
+		virtual Card DrawCard();
+		void Generate() override;
 	};
 }
 

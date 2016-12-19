@@ -6,8 +6,13 @@ namespace Models {
 	{
 	}
 
+	Card SimpleDeck::DrawCard()
+	{
+		return Card();
+	}
+
 	void SimpleDeck::Generate()
 	{
-		m_generator.Generate(m_cards, m_size);
+		m_generator->Generate(m_cards, m_size);
 	}
 }
