@@ -16,7 +16,7 @@ namespace Models
 		virtual void SetSize(int a_size) { m_size= a_size ; }
 		virtual void Generate() {}
 	protected:
-		std::vector<Card> m_cards;
+		std::vector<Card::SharedPtr_T> m_cards;
 		IDeckGenerator m_generator;
 		int m_size;
 	};

@@ -9,6 +9,7 @@ namespace Models {
 	Card::Card(Suit a_suit, CardValue a_val) : m_suit(a_suit), m_value(a_val)
 	{}
 
+	//I would say that other than init, you shouldn't be able to set values => shouldn't have default () constructor
 	void Card::SetSuit(Suit a_suit)
 	{
 		m_suit = a_suit;
@@ -22,7 +23,7 @@ namespace Models {
 	Card::operator std::string() const
 	{
 		std::stringstream ss;
-		ss << "<Card><Suit: " << static_cast<int>(m_suit) << "><Value: " << static_cast<int>(m_value) << ">" << endl;
+		ss << "<Card><Suit: " << static_cast<int>(m_suit) << "><Value: " << static_cast<int>(m_value) << ">\n";
 		return ss.str();
 	}
 
