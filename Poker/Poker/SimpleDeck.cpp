@@ -8,7 +8,7 @@ namespace Models {
 
 	Card SimpleDeck::DrawCard()
 	{
-		return Card();
+		return m_cards[0];
 	}
 
 	void SimpleDeck::Generate()

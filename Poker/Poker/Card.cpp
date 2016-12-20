@@ -1,33 +1,22 @@
 #include "Card.h"
+#include <memory>
+#include <map>
 
 namespace Models {
 
-	Card::Card() :Card(Suit::Clubs, CardValue::Ace)
-	{
-	}
 
-	Card::Card(Suit a_suit, CardValue a_val) : m_suit(a_suit), m_value(a_val)
-	{}
-
-	void Card::SetSuit(Suit a_suit)
-	{
-		m_suit = a_suit;
-	}
-
-	void Card::SetValue(CardValue a_val)
-	{
-		m_value = a_val;
-	}
-
-	Card::operator std::string() const
+	std::string Card::toString()
 	{
 		std::stringstream ss;
-		ss << "<Card><Suit: " << static_cast<int>(m_suit) << "><Value: " << static_cast<int>(m_value) << ">" << endl;
+		ss << "<Card><Suit: " << m_deckType->GetSuits()->at(m_suit) << "><Value: " << m_deckType->GetValues()->at(m_value) << ">" << endl;
 		return ss.str();
+	}
+
+	Card::Card(int a_suit, int a_value, DeckType * a_type):m_suit(a_suit), m_value(a_value), m_deckType(a_type)
+	{
 	}
 
 	Card::~Card()
 	{
 	}
-
 }

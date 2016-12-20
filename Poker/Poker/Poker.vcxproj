@@ -112,7 +112,9 @@
   <ItemGroup>
     <ClInclude Include="Card.h" />
     <ClInclude Include="BaseDeck.h" />
+    <ClInclude Include="DeckType.h" />
     <ClInclude Include="IDeckgenerator.h" />
+    <ClInclude Include="MapUtils.h" />
     <ClInclude Include="SimpleDeck.h" />
     <ClInclude Include="StraightDeckGenerator.h" />
     <ClInclude Include="Utils.h" />

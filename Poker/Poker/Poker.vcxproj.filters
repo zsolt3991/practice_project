@@ -41,6 +41,12 @@
     <ClInclude Include="IDeckgenerator.h">
       <Filter>Header Files\Logic</Filter>
     </ClInclude>
+    <ClInclude Include="DeckType.h">
+      <Filter>Header Files\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="MapUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">

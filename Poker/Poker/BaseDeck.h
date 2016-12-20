@@ -17,6 +17,7 @@ namespace Models
 		virtual int GetSize() { return m_size; }
 		virtual void SetSize(int a_size) { m_size= a_size ; }
 		virtual void Generate() {}
+		virtual std::vector<Card> GetCards() { return m_cards; }
 	protected:
 		std::vector<Card> m_cards{};
 		IDeckGenerator* m_generator;

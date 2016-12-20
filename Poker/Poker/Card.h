@@ -2,6 +2,7 @@
 #include "Utils.h"
 #include <string>
 #include <sstream>
+#include "DeckType.h"
 using namespace std;
 
 namespace Models {
@@ -9,14 +10,14 @@ namespace Models {
 	class Card
 	{
 	public:
-		Card();
-		Card(Suit, CardValue);
-		void SetSuit(Suit s);
-		void SetValue(CardValue v);
-		operator std::string() const;
+		Card(int, int, DeckType*);
+		int GetValue() { return m_value; };
+		int GetSuit() { return m_suit; };
+		std::string toString();
 		~Card();
 	private:
-		Suit m_suit;
-		CardValue m_value;
+		int m_suit;
+		int m_value;
+		DeckType* m_deckType;
 	};
 }
